@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Зміна стилю сторінки</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <Label class="wrap">
+        <label class="Item">
+            Alignment for h1:
+            <select id="h1Leveling">
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="right">Right</option>
+            </select>
+        </label>
+        <label class="Item">Choise background color:
+            <input type="color" id="backgroundColor">
+        </label>
+        <label class="Item">Select font family:
+            <select id="fontFamily">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Times New Roman">Times New Roman</option>
+            </select>
+        </label>
+
+        <label class="Item">Choise background color for links:
+            <input type="color" id="linkBackgroundColor">
+        </label>
+
+        <label class="Item">Choise text color for links area:
+            <input type="color" id="linkTextColor">
+        </label>
+
+        <label class="Item">Choise text color for background links :
+            <input type="color" id="everyLinkBackgroundColor">
+        </label>
+
+        <label class="Item"> Select ul marker:
+            <select id="listMarkerType">
+                <option value="disc">Disc</option>
+                <option value="circle">Circle</option>
+                <option value="square">Square</option>
+                <option value="decimal">Decimal</option>
+            </select>
+        </label>
+        <label class="Item">Select text color for div:
+            </select>
+            <input type="color" id="divColor">
+        </label>
+        <label class="Item">Change div font size
+            <input type="range" id="divFontSize" min="10" max="50">
+        </label>
+        <label class="Item">Change div font weight:
+            <select id="divFontWeight">
+                <option value="normal">Normal</option>
+                <option value="bold">Bold</option>
+            </select>
+        </label>
+    </Label>
+    <label for="urlLinks" id="urlLinks">
+        Change favorite pages:
+        <input class="inputLink" type="text" id="firstLinkText">
+        <input class="inputLink" type="text" id="secondLinkText">
+        <input class="inputLink" type="text" id="thirdLinkText">
+    </label>
+    <div>
+        <h1 class="h1">My page</h1>
+        <p>Favorite pages:
+            <a href="http://" class="link" id="firstLink">google</a>
+            <a href="http://" class="link" id="secondLink">javascript.info</a>
+            <a href="http://" class="link" id="thirdLink">stackoverflow</a>
+        </p>
+        За допомогою JavaScript запропонувати користувачу вибрати стиль для сторінки. А саме:
+        <ul>
+            <li>фон для сторінки</li>
+            <li>тип шпифта на сторінці</li>
+            <li>вирівнювання для заголовка h1</li>
+            <li>фон для параграфа зі зсилками</li>
+            <li>колір тексту у параграфі зі зсилками і для самих зсилок. При чому колір тексту для зсилок призначити у
+                циклі</li>
+            <li>колір, розмір, товщину тексту у елементі div</li>
+            <li>тип маркера для маркованого списку на сторінці</li>
+        </ul>
+        Таким чином слід запропонувати користувачу ввести десять налаштувань сторінки і застосувати їх.<br />
+        ДОДАТОК ДО ЗАВДАННЯ: замість зсилок на конкретні сайти, вивести у панелі навігації силки на три сайти, які вкаже
+        користувач. <br />
+        Наприклад користувач у prompt ввів адресу facebook.com - в такому разі треба створити силку, яка вела б на сайт
+        facebook, а текстом цієї зсилки (тим, по чому можна клікнути) буде також facebook.com
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
